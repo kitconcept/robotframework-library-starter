@@ -9,9 +9,10 @@ clean:
 
 build:
 	@echo "Build"
-	virtualenv-2.7 .py27
+	virtualenv-2.7 || virtualenv .py27
 	.py27/bin/pip install -r requirements.txt
 	.py27/bin/python setup.py develop
+
 test:
 	@echo "Run Tests"
 	.py27/bin/pybot test.robot

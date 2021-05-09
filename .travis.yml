@@ -23,6 +23,3 @@ install:
 - sudo python setup.py develop
 script:
 - pybot test.robot
-notifications:
-  email:
-  - stollenwerk@kitconcept.com
